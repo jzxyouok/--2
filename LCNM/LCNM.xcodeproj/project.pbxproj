@@ -11,6 +11,10 @@
 		605EEC101CFAFBE60042D137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605EEC0F1CFAFBE60042D137 /* Assets.xcassets */; };
 		605EEC131CFAFBE60042D137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605EEC111CFAFBE60042D137 /* LaunchScreen.storyboard */; };
 		605EEC301CFAFD140042D137 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 605EEC2F1CFAFD140042D137 /* AppDelegate.m */; };
+		605EEC341CFB005A0042D137 /* LCNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605EEC331CFB005A0042D137 /* LCNavViewController.m */; };
+		605EEC371CFB007A0042D137 /* LCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605EEC361CFB007A0042D137 /* LCTabBarViewController.m */; };
+		60C089DA1CFBCC27006BCE61 /* UIBarButtonItem+LCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C089D91CFBCC27006BCE61 /* UIBarButtonItem+LCImage.m */; };
+		60C089DD1CFBD04A006BCE61 /* UIView+LCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C089DC1CFBD04A006BCE61 /* UIView+LCView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,15 @@
 		605EEC141CFAFBE60042D137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		605EEC2E1CFAFD140042D137 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		605EEC2F1CFAFD140042D137 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		605EEC311CFAFEF70042D137 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		605EEC321CFB005A0042D137 /* LCNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNavViewController.h; sourceTree = "<group>"; };
+		605EEC331CFB005A0042D137 /* LCNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNavViewController.m; sourceTree = "<group>"; };
+		605EEC351CFB007A0042D137 /* LCTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarViewController.h; sourceTree = "<group>"; };
+		605EEC361CFB007A0042D137 /* LCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarViewController.m; sourceTree = "<group>"; };
+		60C089D81CFBCC27006BCE61 /* UIBarButtonItem+LCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LCImage.h"; sourceTree = "<group>"; };
+		60C089D91CFBCC27006BCE61 /* UIBarButtonItem+LCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LCImage.m"; sourceTree = "<group>"; };
+		60C089DB1CFBD04A006BCE61 /* UIView+LCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LCView.h"; sourceTree = "<group>"; };
+		60C089DC1CFBD04A006BCE61 /* UIView+LCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +231,11 @@
 		605EEC2C1CFAFD040042D137 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				605EEC311CFAFEF70042D137 /* PrefixHeader.pch */,
+				60C089D81CFBCC27006BCE61 /* UIBarButtonItem+LCImage.h */,
+				60C089D91CFBCC27006BCE61 /* UIBarButtonItem+LCImage.m */,
+				60C089DB1CFBD04A006BCE61 /* UIView+LCView.h */,
+				60C089DC1CFBD04A006BCE61 /* UIView+LCView.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -227,6 +245,10 @@
 			children = (
 				605EEC2E1CFAFD140042D137 /* AppDelegate.h */,
 				605EEC2F1CFAFD140042D137 /* AppDelegate.m */,
+				605EEC321CFB005A0042D137 /* LCNavViewController.h */,
+				605EEC331CFB005A0042D137 /* LCNavViewController.m */,
+				605EEC351CFB007A0042D137 /* LCTabBarViewController.h */,
+				605EEC361CFB007A0042D137 /* LCTabBarViewController.m */,
 			);
 			path = Appdelegate;
 			sourceTree = "<group>";
@@ -257,6 +279,7 @@
 		605EEBFE1CFAFBE60042D137 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LC;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = JLC;
 				TargetAttributes = {
@@ -301,6 +324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				605EEC301CFAFD140042D137 /* AppDelegate.m in Sources */,
+				605EEC371CFB007A0042D137 /* LCTabBarViewController.m in Sources */,
+				60C089DD1CFBD04A006BCE61 /* UIView+LCView.m in Sources */,
+				60C089DA1CFBCC27006BCE61 /* UIBarButtonItem+LCImage.m in Sources */,
+				605EEC341CFB005A0042D137 /* LCNavViewController.m in Sources */,
 				605EEC0B1CFAFBE60042D137 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +434,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LCNM/Helper/PrefixHeader.pch";
 				INFOPLIST_FILE = LCNM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jlc.LCNM;
@@ -418,6 +447,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LCNM/Helper/PrefixHeader.pch";
 				INFOPLIST_FILE = LCNM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jlc.LCNM;
@@ -444,6 +475,7 @@
 				605EEC191CFAFBE60042D137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
