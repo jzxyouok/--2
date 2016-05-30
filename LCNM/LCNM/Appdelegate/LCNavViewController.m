@@ -31,9 +31,16 @@
     //设置指定宽度的item
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     item.width = -10;
-//    UIBarButtonItem *backItem = [UIBarButtonItem item]
+    UIBarButtonItem *backItem = [UIBarButtonItem itemWithImage:nil title:@"返回" target:self action:@selector(backClick)];
+    viewController.navigationItem.leftBarButtonItems = @[item,backItem];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
+-(void)backClick{
+
+    [self popViewControllerAnimated:YES];
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
